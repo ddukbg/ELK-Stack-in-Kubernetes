@@ -14,7 +14,7 @@ Logstash, Filebeat는 다른 페이지에서 다룹니다.
 
 ## 구성
 
-![ELK%20Stack%20%E1%84%80%E1%85%AE%E1%84%89%E1%85%A5%E1%86%BC%20in%20Kubernetes%2037172ced14654177a89ed657f0ec2ade/Untitled.png](ELK%20Stack%20%E1%84%80%E1%85%AE%E1%84%89%E1%85%A5%E1%86%BC%20in%20Kubernetes%2037172ced14654177a89ed657f0ec2ade/Untitled.png)
+![ELK%20Stack%20in%20Kubernetes/Untitled.png](ELK%20Stack%20in%20Kubernetes/Untitled.png)
 
 ElasticSearch, Logstash, Kibana, Filebeat 버젼은 7.9.3으로 구성을 할 예정입니다.
 
@@ -301,7 +301,7 @@ EX)  `kubectl exec -it es-cluster-0 -- /bin/bash`
 
 이후 `curl [localhost:9200/_cluster/health?pretty=true](http://localhost:9200/_cluster/health?pretty=true)` 명령어를 날려 아래 사진과 같이 status가 Green 상태 그리고 number_of_nodes(구성한 갯수)를 확인합니다. 제대로 조회가 된다면 정상적으로 구성 완료입니다.
 
-![ELK%20Stack%20%E1%84%80%E1%85%AE%E1%84%89%E1%85%A5%E1%86%BC%20in%20Kubernetes%2037172ced14654177a89ed657f0ec2ade/Untitled%201.png](ELK%20Stack%20%E1%84%80%E1%85%AE%E1%84%89%E1%85%A5%E1%86%BC%20in%20Kubernetes%2037172ced14654177a89ed657f0ec2ade/Untitled%201.png)
+![ELK%20Stack%20in%20Kubernetes/Untitled%201.png](ELK%20Stack%20in%20Kubernetes/Untitled%201.png)
 
 ## Kibana 생성
 
@@ -348,7 +348,7 @@ Kibana는 Deployment 형식으로 생성합니다.
 
 정상적으로 Kibana Pod가 기동이 되었다면 웹브라우저에서 LoadBalancer(Kibana) IP:5601 입력하여 접속합니다. 
 
-![ELK%20Stack%20%E1%84%80%E1%85%AE%E1%84%89%E1%85%A5%E1%86%BC%20in%20Kubernetes%2037172ced14654177a89ed657f0ec2ade/Untitled%202.png](ELK%20Stack%20%E1%84%80%E1%85%AE%E1%84%89%E1%85%A5%E1%86%BC%20in%20Kubernetes%2037172ced14654177a89ed657f0ec2ade/Untitled%202.png)
+![ELK%20Stack%20in%20Kubernetes/Untitled%202.png](ELK%20Stack%20in%20Kubernetes/Untitled%202.png)
 
 접속했을 때 위 사진처럼 **"Kibana server is not ready yer"** 이라는 문장이 나타난다면
 
@@ -378,7 +378,7 @@ curl -X POST https://localhost:9200/_aliases --insecure -H 'Content-Type: applic
 
 그리고 다시 URL로 접속해보면 Kibana 화면이 정상적으로 보이게 됩니다!
 
-![ELK%20Stack%20%E1%84%80%E1%85%AE%E1%84%89%E1%85%A5%E1%86%BC%20in%20Kubernetes%2037172ced14654177a89ed657f0ec2ade/Untitled%203.png](ELK%20Stack%20%E1%84%80%E1%85%AE%E1%84%89%E1%85%A5%E1%86%BC%20in%20Kubernetes%2037172ced14654177a89ed657f0ec2ade/Untitled%203.png)
+![ELK%20Stack%20in%20Kubernetes/Untitled%203.png](ELK%20Stack%20in%20Kubernetes/Untitled%203.png)
 
 ## Logstash, Filebeat
 
