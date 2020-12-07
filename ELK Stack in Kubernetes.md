@@ -383,5 +383,5 @@ curl -X POST https://localhost:9200/_aliases --insecure -H 'Content-Type: applic
 ## Logstash, Filebeat
 
 Logstash, Filebeat 설치 방법은 아래 페이지에서 다루도록 하겠습니다.
-
-[Logstash, Filebeat](https://www.notion.so/Logstash-Filebeat-375f65154df94746aa11273b02d1b7d3)
+(추가 예정)
+[Logstash, Filebeat]()
