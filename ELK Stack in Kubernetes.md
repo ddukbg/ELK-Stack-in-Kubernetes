@@ -383,5 +383,4 @@ curl -X POST https://localhost:9200/_aliases --insecure -H 'Content-Type: applic
 ## Logstash, Filebeat
 
 Logstash, Filebeat 설치 방법은 아래 페이지에서 다루도록 하겠습니다.
-(추가 예정)
-[Logstash, Filebeat]()
+[Logstash, Filebeat](https://github.com/ddukbg/ELK-Stack-in-Kubernetes/blob/main/Logstash%20Filebeat.md)
