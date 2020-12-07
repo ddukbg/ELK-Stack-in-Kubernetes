@@ -14,4 +14,4 @@ Filebeat, Logstash를 Ubuntu 이미지를 이용하여 각각 한대 씩 구성
 
 [Elasticsearch, Kibana 구성](https://github.com/ddukbg/ELK-Stack-in-Kubernetes/blob/main/ELK%20Stack%20in%20Kubernetes.md)
 
-[Filebeat, Logstash 구성](https://github.com/ddukbg/ELK-Stack-in-Kubernetes/blob/main/ELK%20Stack%20in%20Kubernetes.md)
+[Filebeat, Logstash 구성](https://github.com/ddukbg/ELK-Stack-in-Kubernetes/blob/main/Logstash%20Filebeat.md)
